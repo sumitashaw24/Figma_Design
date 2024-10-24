@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 1440px;
+}
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.left{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 600;
+}
+.left>img{
+    height: 80%;
+    width: 10%;   
+}
+.mid{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+.right{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+
+.home-cart{
+    height: 316px;
+    width: 100%;
+    background: url("https://s3-alpha-sig.figma.com/img/1461/f3d6/ff74c027a1888544144abe4be6e02cbf?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AEpyZf3e2pjDE49KB2h9uhhHl--HxGL0p~gOD9NMtoZTPScpd8sO4VRuwKa901LDa1uEMWU~EoY-E-bs4EX1npOsK66zVJxH5pu-bbdzlQHaekm8nQ~jmrW2pWe4U0dSn1SxSM8DQqgdHBx3tCPlZn9sniZPai17Gz8DdsuOQ-dIvAeb9IZeAAhD1VZoxJDHn5D6cd5dtqnjRUF4fegU-ogFr6zL9BX0OBbewKD3stvf62axLbXnDsxEZze1mM0IBuikfqUjI~5tYQLJTkVpL4aeenLGLK1bjT2PEOo5GSgjhb~T5~4dMA3gkqUBH3S2gAsu0CPSuLslLgyOm2S~ww__");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home-cart::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    background-color: #ffffff58;
+}
+.top{
+    height: 77px;
+    width: 77px;
+    z-index: 3;
+}
+.top>img{
+    height: 100%;
+    width: 100%;
+}
+.middle{
+    height: 72px;
+    width: 106px;
+    font-size: 48px;
+    font-weight: 500;
+    text-align: center;
+    z-index: 3;
+}
+.bottom{
+    height: 24px;
+    width: 115px;
+    font-size: 16px;
+    font-weight: 600;
+    z-index: 3;
+    text-align: center;
+}
+.cart{
+    height: 525px;
+    width: 100%;
+    display: flex;
+}
+.items{
+    height: 100%;
+    width: 70%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: -85px;
+}
+.icons{
+    height: 55px;
+    width: 817px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    background-color: #F9F1E7;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.product{
+    height: 105px;
+    width: 817px;
+    display: flex;
+    margin-top: 50px;
+}
+.eachProduct{
+    height: 100%;
+    width: 250px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    color: #9F9F9F;
+    /* background-color: blue; */
+}
+.eachProduct>img{
+    height: 100%;
+    width: 108px;
+    border-radius: 10px;
+    background-color: beige;
+}
+.price{
+    height: 100%;
+    width: 150px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    color: #9F9F9F;
+    padding-left: 20px;
+    /* background-color: blue; */
+}
+.quantity{
+     height: 100%;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #9F9F9F;
+    /* background-color: red; */
+}
+.quantity>input{
+    height: 35px;
+    width: 35px;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    border: 1px solid #9F9F9F;
+}
+.subtotal{
+    height: 100%;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #9F9F9F;
+}
+.remove{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.totals{
+    height: 100%;
+    width: 30%;
+    display: grid;
+    place-items: center;
+}
+.cartTotals{
+    height: 390px;
+    width: 393px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9F1E7;
+    border-radius: 2px;
+    font-size: 18px;
+}
+.amount{
+    height: 40%;
+    width: 80%;
+}
+.amount>#subtotal{
+    height: 40%;
+    width: 100%;
+    color: black;
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 600;
+}
+
+.amount>.total{
+    height: 40%;
+    width: 100%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: #B88E2F;
+}
+
+.checkout{
+    height: 59px;
+    width: 222px;
+    border:1px solid black;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    background: transparent;
+}
+
+footer{
+    height: 270px;
+    width: 100%;
+    background-color: #FAF3EA;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
